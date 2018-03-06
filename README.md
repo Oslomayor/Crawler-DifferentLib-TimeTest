@@ -20,10 +20,10 @@
 
 ## 结果分析
 
-为了避免网速波动的影响，整个程序只请求了一次 request ，然后用不同的库解析同一个 html 页面。  
+* 为了避免网速波动的影响，整个程序只请求了一次 request ，然后用不同的库解析同一个 html 页面。  
 
-从测试结果可以看出，BeautifulSoup 配合 Python 内置的 html.parser 速度最慢，换成 lxml 变快了一些。  
+* 从测试结果可以看出，BeautifulSoup 配合 Python 内置的 html.parser 速度最慢，换成 lxml 变快了一些。  
 
-第二块的是 Lxml 库的 etree 配合 XPath 语法。  
+* 第二块的是 Lxml 库的 etree 配合 XPath 语法。  
 
-最快的是采用正则表达式，re模块的表达式得凑，很少能一次猜对，这需要一定经验和技巧
+* 最快的是采用正则表达式，re模块的表达式得凑，很少能一次猜对，这需要一定经验和技巧
